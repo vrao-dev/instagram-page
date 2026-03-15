@@ -1,0 +1,230 @@
+
+    
+      *{
+         margin: 0%;
+         background-color: whitesmoke;
+      }
+     .login_button{
+        background-color: rgb(3, 106, 202);
+        color: whitesmoke;
+        border: none;
+        height: 45px;
+        width: 450px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 16px;
+        margin-left:20px ;
+        margin-right: 20px;
+        cursor: pointer;
+        display: block;
+        cursor: pointer;
+        
+       transition: box-shadow 0.15s,font-size 0.15s;
+     }
+
+     .username{
+
+        height: 50px;
+        width: 450px;
+        border-width: 2.3px;
+        border-radius: 13px;
+        border-style: solid;
+        font-family: arial;
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+        background: none;
+        color:black;
+        display: block;
+        margin-bottom: 20px;
+        text-indent: 20px;
+         
+     }
+     .username:hover,.password:hover{
+      border-color: rgb(61, 61, 61);
+     }
+     .login_button:active{
+   
+      opacity: 90%;
+      
+     }
+
+     .password{
+
+       margin-bottom: 50px;
+        height: 50px;
+        width: 450px;
+        border-radius: 13px;
+        border-style: solid;
+        text-indent: 20px;
+        font-family: arial;
+        font-size: 16px;
+        color: black;
+        margin-left: 20px;
+        margin-right: 20px;
+        background: none;
+        display: block;
+        border-width: 2.3px;
+
+         
+     }
+
+     .background{
+        background-color: #0A1317;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 120px;
+        display:block;
+        margin-left: 80px;
+        
+   
+     }
+
+     .forgot_password_text{
+      display: block;
+      font-style: bolder;
+      font-size: 18px;
+      background: none;
+      border: none;
+      color: black;
+      width:fit-content;
+      height: 30px;
+      margin-top: 40px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 40px;
+      border-radius: 18px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-left: 20px;
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 10px;
+      padding-bottom: 0px;
+      
+     }
+     .forgot_password_text:hover,
+     .login_with_facebook_button:hover,
+     .create_new_account_button:hover
+     {
+      background-color: white;
+      
+     }
+     .forgot_password_text:active,
+     .login_with_facebook_button:active,
+     .create_new_account_button:active
+     {
+      background-color:white;
+     }
+     .login-to-facebook-text{
+      display: block;
+      color: black;
+      margin-right: 100px;
+      font-weight: bold;
+      font-size: 20px;
+      padding-bottom: 10px;
+      padding-left:20px;
+      text-align:left ;
+      margin-top: 10px;
+      margin-top: 50px;
+      cursor: pointer;
+     }
+
+     
+     .create_new_account_button{
+      background: none;
+      width: 450px;
+      height: 40px;
+      border-style: solid;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-family: arial;
+      font-weight: bolder;
+      font-size: 18px;
+      border-radius: 18px;
+      color:  rgb(20, 122, 240);
+      border-color:  rgb(20, 122, 240);
+      margin-bottom: 20px;
+      cursor: pointer;
+     }
+     
+     
+     .logo{
+        width: 130px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+       
+     }
+
+     .image_1{
+        display: block;
+        width: 500px;
+        margin: 0px;
+         margin-top: 20px;
+        
+     }
+     .text_1{
+        display: block;
+        color: black;
+        font-size: 35px;
+        text-align: center;
+        margin: 0px;  
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+
+     }
+        .color_text{
+         color: rgb(3, 106, 202);
+         font-size: 35px;
+         font-weight: bold;
+         display: inline-block;
+         padding-left: 170px;
+         margin: 0px;
+        }
+        
+        .your_text{
+
+            font-size: 35px;
+            display: inline-block;
+            color: whitesmoke;
+            margin: 0px;
+            margin-left: 70px;
+            
+        }
+        .peras{
+
+         display: inline;
+         color:#0A1317;
+         font-family: arial;
+         font-size: 12px;
+         padding: 10px;
+
+        }
+        .peras:hover{
+         text-decoration: underline;
+         cursor: pointer;
+
+        }
+
+        .back-button{
+    background: none;
+    margin-left: 0px;
+    border: none;
+    color: black;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    width:30px;
+
+
+    
+}
+
+.back-button:hover{
+    border-radius: 20px;
+    background-color:rgb(138, 138, 138) ;
+}
+
+        

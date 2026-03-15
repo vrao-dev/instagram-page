@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    background-color: #0A1317;
+}
+
+.dob{
+
+    height: 60px;
+    width: 600px;
+    background-color: #0A1317;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 3px;
+    text-indent: 10px;
+    font-size: 17px;
+    font-family: arial;
+    font-weight:bold;
+    color: whitesmoke;
+    width: 150px;
+    margin-left:47px ;
+    margin-right: 0px;
+    padding-right: 15px;
+    
+
+}
+p{
+    display: inline-block;
+    color: whitesmoke;
+    font-size: medium;
+    font-family: arial;
+    margin-left: 100px;
+    margin-top: 0;
+    
+}
+
+
+h3{
+    color: whitesmoke;
+    margin: 0;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+.username{
+        height: 60px;
+        width: 600px;
+        border-width: 2.3px;
+        border-radius: 13px;
+        border-style: solid;
+        font-family: arial;
+        font-size: 16px;
+        margin-left: 90px;
+        margin-right: 90px;
+        background: none;
+        color: #dae0e2;
+        display: block;
+        margin-bottom: 20px;
+        text-indent: 20px;
+        font-weight: bold;
+}
+.blue-font{
+    margin-left: 2px;
+    color: rgb(0, 63, 238);
+    display: inline;
+    width: 600px;
+    word-wrap:normal;
+}
+.blue-font:hover{
+    text-decoration: underline;
+}
+.submit-button{
+    
+        background-color: rgb(20, 106, 204);
+        color: whitesmoke;
+        border: none;
+        height: 55px;
+        width: 600px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        margin-left:95px ;
+        margin-right: 90px;
+        cursor: pointer;
+        display: block;
+        cursor: pointer;
+        margin-top: 50px;
+        
+       transition: box-shadow 0.15s,font-size 0.15s;
+
+}
+.submit-button:hover{
+    background-color:rgb(71, 135, 209) ;
+}
+
+ .already-have-an-account-button{
+      background: none;
+      width: 600px;
+      height: 55px;
+      border-style: solid;
+      color: whitesmoke;
+      margin-left:95px;
+      margin-right: 20px;
+      font-family: arial;
+      font-weight: bolder;
+      font-size: 18px;
+      border-radius: 28px;
+      border-color: whitesmoke;
+      margin-bottom: 20px;
+      cursor: pointer;
+      margin-top: 30px;
+     }
+     .already-have-an-account-button:hover{
+        background-color: #223942;
+     }
+
+     .back-button{
+    background: none;
+    margin-left: 90px;
+    border: none;
+    color: whitesmoke;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width:30px;
+
+
+    
+}
+
+.back-button:hover{
+    border-radius: 20px;
+    background-color:#263d47 ;
+   
+}
+
+
+.peras{
+
+         display: inline;
+         color: rgb(202, 189, 189);
+         font-family: arial;
+         font-size: 12px;
+         margin: 5px;
+         
+        }
+        .peras:hover{
+         text-decoration: underline;
+         cursor: pointer;
+
+        }
+     

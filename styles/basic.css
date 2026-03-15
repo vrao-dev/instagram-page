@@ -1,0 +1,27 @@
+.peras{
+
+         display: inline;
+         color: rgb(202, 189, 189);
+         font-family: arial;
+         font-size: 12px;
+         padding: 10px;
+         
+
+        }
+        .peras:hover{
+         text-decoration: underline;
+         cursor: pointer;
+
+        }
+        .peras-1{
+            
+         display: inline;
+         color: rgb(65, 65, 65);
+         font-family: arial;
+         font-size: 12px;
+         padding: 10px;
+
+        }
+        a{
+            text-decoration: none;
+        }
