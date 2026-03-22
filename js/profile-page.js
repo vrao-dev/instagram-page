@@ -71,6 +71,17 @@ const venky = {
     bio:'',
     number:'8125631523',
 }
+const raju = {
+    id:'raju',
+    username:'kallauru_raja122',
+    name:'𝙍𝘼𝙅𝘼',
+    dp:'raju-dp',
+    followers:'288',
+    following:'910',
+    posts:'33',
+    bio:'🇷‌🇦‌🇯‌🇦 <br> HEARTLESS MONSTER 😈<br> 𝙄 𝘿𝙊𝙉𝙏 𝙎𝘼𝙔 𝙈𝙐𝘾𝙃,𝙄 𝙇𝙄𝙎𝙏𝙀𝙉<br> WISH ME ON JUNE 5<br>MEGASTAR FAN<br>@chenna_kesava_reddy_vennapusa 🫂',
+    number:'6304153338',
+}
 
 
 
@@ -99,7 +110,7 @@ function accountPage(){
          console.log(inputElement1);
          console.log(input1);
 
-         let users =[venky,leela,karthik,siddith,teja,charan];
+         let users =[venky,leela,karthik,siddith,teja,charan,raju];
 
          users.forEach((username) => {
 
@@ -160,7 +171,7 @@ function user (accuser){
 document.addEventListener('DOMContentLoaded', () => {
     const storedUserId = localStorage.getItem('currentUser');
     if (storedUserId) {
-        const users = [venky, leela, karthik, siddith, teja, charan];
+        const users = [venky, leela, karthik, siddith, teja, charan,raju];
         const userObj = users.find(u => u.id === storedUserId);
         if (userObj) {
             user(userObj);
