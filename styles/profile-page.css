@@ -19,6 +19,7 @@ body{
     margin-right: 10px;
     font-weight: 500;
     margin-top: 20px;
+    font-weight: bold;
 }
 
 .user-name{
@@ -26,6 +27,7 @@ body{
     
     margin-bottom: 20px;
     font-weight: 530;
+    font-weight: bold;
     
 
 }
@@ -87,8 +89,10 @@ body{
     padding-top: 20px;
     display: flex;
     flex: 1;
-    justify-content: space-between;
     justify-content: center;
+   
+    
+    
 
 }
 
@@ -102,6 +106,8 @@ body{
     top: 10px;
     bottom: 10px;
     width: 80px;
+    max-height: 650px;
+    
 }
 .nav-icons{
     width: 30px;

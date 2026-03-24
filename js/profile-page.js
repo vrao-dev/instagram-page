@@ -1,6 +1,6 @@
 
 
-const leela = {
+const user_1 = {
     id:'leela',
     username:'leela_7997',
     name:'leela_7997',
@@ -12,7 +12,7 @@ const leela = {
     number:'9347582189',
 }
 
-const charan = {
+const user_2 = {
     id:'charan',
     username:'_c_h_a_r_a_n_7_',
     name:'CHARAN 😎',
@@ -24,7 +24,7 @@ const charan = {
     number:'9121669869',
 }
 
-const siddith = {
+const user_3 = {
     id:'siddith',
     username:'__siddhu_17__',
     name:'',
@@ -36,7 +36,7 @@ const siddith = {
     number:'9133185815',
 }
 
-const karthik = {
+const user_4 = {
     id:'karthik',
     username:'karthik_bethu_',
     name:'Kᴀʀᴛʜɪᴋ Nᴀɪᴅᴜ❤️‍🔥',
@@ -48,7 +48,7 @@ const karthik = {
     number:'8074778900',
 }
 
-const teja = {
+const user_5 = {
     id:'teja',
     username:'venkat_teja_9848',
     name:'VENKAT TEJA❤️‍🔥',
@@ -60,7 +60,7 @@ const teja = {
     number:'7569926788',
 }
     
-const venky = {
+const user_6 = {
     id:'venky',
     username:'venkatesh_naidu_ande',
     name:'ꪜꫀ᭢ƙꪗ',
@@ -69,9 +69,9 @@ const venky = {
     following:'256',
     posts:'0',
     bio:'',
-    number:'8125631523',
+    number:'8125',
 }
-const raju = {
+const user_7 = {
     id:'raju',
     username:'kallauru_raja122',
     name:'𝙍𝘼𝙅𝘼',
@@ -82,6 +82,7 @@ const raju = {
     bio:'🇷‌🇦‌🇯‌🇦 <br> HEARTLESS MONSTER 😈<br> 𝙄 𝘿𝙊𝙉𝙏 𝙎𝘼𝙔 𝙈𝙐𝘾𝙃,𝙄 𝙇𝙄𝙎𝙏𝙀𝙉<br> WISH ME ON JUNE 5<br>MEGASTAR FAN<br>@chenna_kesava_reddy_vennapusa 🫂',
     number:'6304153338',
 }
+
 
 
 
@@ -107,30 +108,40 @@ function accountPage(){
          let inputElement = document.querySelector('.input-username');
          let inputElement1=inputElement.value;
 
-         console.log(inputElement1);
-         console.log(input1);
+        
 
-         let users =[venky,leela,karthik,siddith,teja,charan,raju];
+         //let users =[venky,leela,karthik,siddith,teja,charan,raju];
+         let users =[user_1,user_2,user_3,user_4,user_5,user_6,user_7];
+         let account;
 
-         users.forEach((username) => {
+         users.forEach((account) => {
+            
 
-            if(username.username || username.number===inputElement1)
+            if ( account.number === inputElement1)
                 {
-                   if(username.number===input1){ 
-                    let accuser_1=username.id;
+                   if(account.number === input1 || account.username === input1){
+                    let accuser_1=account.id;
+                    console.log("if-else");
                    
                     localStorage.setItem('currentUser', accuser_1);
                     window.location.href = "profile-page.html";
-                   }   
+                    
                 } 
-                    else{       
-                     document.querySelector('.incorrect-password').innerHTML=`<p>${'Incorrect Username or password'}</p>`;
-                    } 
-
+                  
+            }
+            else if (account.username ||  account.number !== inputElement1){       
+                    document.querySelector('.incorrect-password').innerHTML=`<p>${'Incorrect Username or password'}</p>`;
+                    }
+            
+           
+            
         });
+        
+         console.log(inputElement1);
+         console.log(input1);
+         
 
-        return username;
-        return inputElement1;
+    
 
 }
 
@@ -138,10 +149,11 @@ function accountPage(){
 
 
 function user (accuser){
-
+   
+    
     accuser ;
    
-   let dpic = document.getElementById("profile-dp"); 
+    let dpic = document.getElementById("profile-dp"); 
     dpic.src  = `dps/${accuser.dp}.jpg`;
 
     let smalldpic = document.getElementById("nav-profile-dp"); 
@@ -171,7 +183,7 @@ function user (accuser){
 document.addEventListener('DOMContentLoaded', () => {
     const storedUserId = localStorage.getItem('currentUser');
     if (storedUserId) {
-        const users = [venky, leela, karthik, siddith, teja, charan,raju];
+        const users = [user_1,user_2,user_3,user_4,user_5,user_6,user_7];
         const userObj = users.find(u => u.id === storedUserId);
         if (userObj) {
             user(userObj);
