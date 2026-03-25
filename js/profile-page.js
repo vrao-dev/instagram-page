@@ -62,7 +62,7 @@ const user_5 = {
     
 const user_6 = {
     id:'venky',
-    username:'venkatesh_naidu_ande',
+    username:"venkatesh_naidu_ande",
     name:'ꪜꫀ᭢ƙꪗ',
     dp:'venky-dp',
     followers:'274',
@@ -81,6 +81,28 @@ const user_7 = {
     posts:'33',
     bio:'🇷‌🇦‌🇯‌🇦 <br> HEARTLESS MONSTER 😈<br> 𝙄 𝘿𝙊𝙉𝙏 𝙎𝘼𝙔 𝙈𝙐𝘾𝙃,𝙄 𝙇𝙄𝙎𝙏𝙀𝙉<br> WISH ME ON JUNE 5<br>MEGASTAR FAN<br>@chenna_kesava_reddy_vennapusa 🫂',
     number:'6304153338',
+}
+const user_8 = {
+    id:'mani',
+    username:'poornamanideep',
+    name:'Poornamanideep',
+    dp:'mani-dp',
+    followers:'612',
+    following:'738',
+    posts:'6',
+    bio:'G.PoOrNaMaNiDeEp',
+    number:'9845133940',
+}
+const user_9 = {
+    id:'sweety',
+    username:'queen_of_heart_sup',
+    name:'𝓢𝓾𝓹𝓻𝓲𝔂𝓪 𝓖𝓪𝓲𝓴𝔀𝓪𝓭',
+    dp:'sweety-dp',
+    followers:'388',
+    following:'596',
+    posts:'395',
+    bio:'I make the future of students 🌟. Assistant Professor✍️<br>Daddys_Girl♥️<br>♾️',
+    number:'8308224906',
 }
 
 
@@ -111,17 +133,18 @@ function accountPage(){
         
 
          //let users =[venky,leela,karthik,siddith,teja,charan,raju];
-         let users =[user_1,user_2,user_3,user_4,user_5,user_6,user_7];
+         let users =[user_1,user_2,user_3,user_4,user_5,user_6,user_7,user_8,user_9];
          let account;
 
          users.forEach((account) => {
             
 
-            if ( account.number === inputElement1)
+            if (account.username === inputElement1 || account.number === inputElement1)
                 {
-                   if(account.number === input1 || account.username === input1){
+                   if( account.number === input1 ){
                     let accuser_1=account.id;
                     console.log("if-else");
+                    console.log(inputElement1=== account.username);
                    
                     localStorage.setItem('currentUser', accuser_1);
                     window.location.href = "profile-page.html";
@@ -137,7 +160,7 @@ function accountPage(){
             
         });
         
-         console.log(inputElement1);
+         
          console.log(input1);
          
 
@@ -183,7 +206,7 @@ function user (accuser){
 document.addEventListener('DOMContentLoaded', () => {
     const storedUserId = localStorage.getItem('currentUser');
     if (storedUserId) {
-        const users = [user_1,user_2,user_3,user_4,user_5,user_6,user_7];
+        const users = [user_1,user_2,user_3,user_4,user_5,user_6,user_7,user_8,user_9];
         const userObj = users.find(u => u.id === storedUserId);
         if (userObj) {
             user(userObj);
