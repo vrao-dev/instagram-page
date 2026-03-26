@@ -18,6 +18,11 @@
 
          
       }
+
+      input:focus {
+      height: 57px;
+
+}
       .content-div{
          display: flex;
          flex-direction: column;
@@ -37,13 +42,10 @@
         border-radius: 23px;
         font-weight: bold;
         font-size: 16px;
-       
-        cursor: pointer;
         display: block;
         cursor: pointer;
         margin-top: 50px;
         
-       transition: box-shadow 0.15s,font-size 0.15s;
      }
 
      .username{
@@ -69,7 +71,7 @@
      }
      .login_button:active{
    
-      opacity: 90%;
+      background-color: rgb(28, 107, 197);
       
      }
 
