@@ -308,6 +308,9 @@
           display: none;
             
          }
+         .bottom-border{
+            height: 0;
+         }
         
    }
 
@@ -332,7 +335,9 @@
             display: none;
          }
         
-         
+         .bottom-border{
+            height: 0;
+         }
        
          
         
