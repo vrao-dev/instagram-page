@@ -21,8 +21,6 @@
       
       input:focus{
          height: 50px;
-         font-size:18px ;
-        
          font-weight: 530;
          
       }
@@ -306,6 +304,10 @@
          .login_to_instagram_text{
             margin-top:100px ;
          }
+           .contact-div{
+          display: none;
+            
+         }
         
    }
 
@@ -329,9 +331,7 @@
          .bottom-border{
             display: none;
          }
-         .peras{
-         display: none;
-        }
+        
          
        
          
