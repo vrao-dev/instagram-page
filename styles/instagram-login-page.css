@@ -11,18 +11,27 @@
          
          
       }
-      .input-div{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-
+      button{
+         transition: all 0.4s ease;
+      }
+      
+     
+         
+         
+      
+      input:focus{
+         height: 50px;
+         font-size:18px ;
+        
+         font-weight: 530;
          
       }
+     
 
-      input:focus {
-      height: 57px;
+     
 
-}
+
+   
       .content-div{
          display: flex;
          flex-direction: column;
@@ -69,9 +78,22 @@
      .username:hover,.password:hover{
       border-color: rgb(177, 165, 165);
      }
-     .login_button:active{
+     .login_button:hover,
+     .show-button:hover,
+     .create_new_account_button:hover,
+     .login_with_facebook_button:hover,
+     .forgot_password_text:hover{
+      transform: scale(1.05);
+     }
+     .login_button:active,
+     .show-button:active,
+     .create_new_account_button:active,
+     .forgot_password_text:active,
+     .login_with_facebook_button:active{
    
-      background-color: rgb(28, 107, 197);
+     
+      transform: scale(0.98);
+      
       
      }
 
@@ -307,6 +329,10 @@
          .bottom-border{
             display: none;
          }
+         .peras{
+         display: none;
+        }
+         
        
          
         
