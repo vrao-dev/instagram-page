@@ -123,6 +123,7 @@ function incorrect (){
          
 }
 
+
 function accountPage(){
    
          let input = document.querySelector('.input-password');
@@ -143,25 +144,25 @@ function accountPage(){
                 {
                    if( account.number === input1 ){
                     let accuser_1=account.id;
-                    console.log("if-else");
-                    console.log(inputElement1=== account.username);
+                    
                    
                     localStorage.setItem('currentUser', accuser_1);
                     window.location.href = "profile-page.html";
+                    document.querySelector('.incorrect-password').innerHTML=`<p>${null}</p>`;
                     
                 } 
                   
             }
-            else if (account.username ||  account.number !== inputElement1){       
+            else       
                     document.querySelector('.incorrect-password').innerHTML=`<p>${'Incorrect Username or password'}</p>`;
-                    }
+                    
             
            
             
         });
         
          
-         console.log(input1);
+        
          
 
     
