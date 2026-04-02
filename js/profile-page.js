@@ -93,17 +93,6 @@ const user_8 = {
     bio:'G.PoOrNaMaNiDeEp',
     number:'9845133940',
 }
-const user_9 = {
-    id:'sweety',
-    username:'queen_of_heart_sup',
-    name:'𝓢𝓾𝓹𝓻𝓲𝔂𝓪 𝓖𝓪𝓲𝓴𝔀𝓪𝓭',
-    dp:'sweety-dp',
-    followers:'388',
-    following:'596',
-    posts:'395',
-    bio:'I make the future of students 🌟. Assistant Professor✍️<br>Daddys_Girl♥️<br>♾️',
-    number:'8308224906',
-}
 
 
 
@@ -116,25 +105,28 @@ function incorrect (){
          let input1=input.value;
          let password = document.querySelector('.incorrect-password');
         
-         if(input1===''){
-            password.innerHTML=`<p>${'Enter Password'}</p>`;
-         }
+        
 
          
 }
 
+        
+
 
 function accountPage(){
-   
-         let input = document.querySelector('.input-password');
+
+
+        let input = document.querySelector('.input-password');
          let input1=input.value;
          let inputElement = document.querySelector('.input-username');
          let inputElement1=inputElement.value;
 
+   
+         
         
 
          //let users =[venky,leela,karthik,siddith,teja,charan,raju];
-         let users =[user_1,user_2,user_3,user_4,user_5,user_6,user_7,user_8,user_9];
+         let users =[user_1,user_2,user_3,user_4,user_5,user_6,user_7,user_8,];
          let account;
 
          users.forEach((account) => {
@@ -145,29 +137,42 @@ function accountPage(){
                    if( account.number === input1 ){
                     let accuser_1=account.id;
                     
+                    
                    
                     localStorage.setItem('currentUser', accuser_1);
                     window.location.href = "profile-page.html";
-                    document.querySelector('.incorrect-password').innerHTML=`<p>${null}</p>`;
+                    document.querySelector('.incorrect-password').innerHTML=`<p>${''}</p>`;
+
+                     
                     
                 } 
                   
             }
-            else       
-                    document.querySelector('.incorrect-password').innerHTML=`<p>${'Incorrect Username or password'}</p>`;
+
+            else  if(input1===''){
+                
+                setTimeout(() => {
+            document.querySelector('.incorrect-password').innerHTML=`<p>${'Enter Password'}</p>`;
+
+            }, 1500);
+
+         }
+            else{   
+                  setTimeout(() => {
+
+                    document.querySelector('.incorrect-password').innerHTML=`<p>${'Incorrect Username or Password'}</p>`;
+
+
+  
+                    }, 1500);
                     
-            
+            }
            
             
         });
-        
-         
-        
-         
-
-    
 
 }
+
 
 
 
@@ -204,10 +209,24 @@ function user (accuser){
      
 }
 
+
+function colorchange (){
+    //document.getElementById('loginButton').classList.add("login-button-2");
+    document.getElementById('loginButton').innerHTML=`<img class="loading-img" src="images/loading-icon.png" alt="">`;
+
+    setTimeout(() => {
+            
+            document.getElementById('loginButton').innerHTML=`Log in`;
+            
+
+        }, 2000);
+
+        }
+
 document.addEventListener('DOMContentLoaded', () => {
     const storedUserId = localStorage.getItem('currentUser');
     if (storedUserId) {
-        const users = [user_1,user_2,user_3,user_4,user_5,user_6,user_7,user_8,user_9];
+        const users = [user_1,user_2,user_3,user_4,user_5,user_6,user_7,user_8];
         const userObj = users.find(u => u.id === storedUserId);
         if (userObj) {
             user(userObj);

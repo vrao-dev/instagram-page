@@ -63,6 +63,7 @@
 
       <div class="input-div">
             <input class="username input-username" 
+            id="username"
             onkeydown="keydown(event);"            
             type="text"
             placeholder="Mobile number,username or email address">
@@ -93,8 +94,10 @@
             
                
            
-            <button onclick="incorrect();accountPage();
-            " class="login_button"
+            <button onclick="incorrect();accountPage();colorchange()"
+             class="login_button"
+            id="loginButton"
+            
             >Log in </button>
 
             <div id="account-page">

@@ -44,7 +44,7 @@
      
 
      .login_button{
-        background-color: rgb(36, 124, 226);
+        background-color: rgb(9, 109, 223);
         color: rgb(255, 253, 253);
         border: none;
         height: 45px;
@@ -56,6 +56,11 @@
         cursor: pointer;
         margin-top: 50px;
         
+     }
+    
+     .loading-img{
+      width: 50px;
+      padding-top: -10px;
      }
 
      .username{
