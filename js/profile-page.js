@@ -116,7 +116,7 @@ function incorrect (){
 function accountPage(){
 
 
-        let input = document.querySelector('.input-password');
+         let input = document.querySelector('.input-password');
          let input1=input.value;
          let inputElement = document.querySelector('.input-username');
          let inputElement1=inputElement.value;
@@ -125,7 +125,7 @@ function accountPage(){
          
         
 
-         //let users =[venky,leela,karthik,siddith,teja,charan,raju];
+        
          let users =[user_1,user_2,user_3,user_4,user_5,user_6,user_7,user_8,];
          let account;
 
@@ -162,14 +162,10 @@ function accountPage(){
 
                     document.querySelector('.incorrect-password').innerHTML=`<p>${'Incorrect Username or Password'}</p>`;
 
-
-  
-                    }, 1500);
+                 }, 1500);
                     
             }
-           
-            
-        });
+           });
 
 }
 
@@ -182,44 +178,26 @@ function user (accuser){
     
     accuser ;
    
-    let dpic = document.getElementById("profile-dp"); 
-    dpic.src  = `dps/${accuser.dp}.jpg`;
-
-    let smalldpic = document.getElementById("nav-profile-dp"); 
-    smalldpic.src  = `dps/${accuser.dp}.jpg`;
-
-
-     let username =document.getElementById("account-username"); 
-     username.innerHTML=`${accuser.username}`;
-
-     let name =document.getElementById("account-name"); 
-     name.innerHTML=`${accuser.name}`;
-
-     let posts =document.getElementById("posts"); 
-     posts.innerHTML=`Posts ${accuser.posts}`;
-
-     let followers =document.getElementById("followers"); 
-     followers.innerHTML=`Followers ${accuser.followers}`;
-
-     let following =document.getElementById("following"); 
-     following.innerHTML=`Following  ${accuser.following}`;
-
-     let bio =document.getElementById("bio"); 
-     bio.innerHTML=`${accuser.bio}`;
+    document.getElementById("profile-dp").src  = `dps/${accuser.dp}.jpg` 
+    document.getElementById("nav-profile-dp").src  = `dps/${accuser.dp}.jpg`;
+    document.getElementById("account-username").innerHTML=`${accuser.username}`;
+    document.getElementById("account-name").innerHTML=`${accuser.name}`;
+    document.getElementById("posts").innerHTML=`Posts ${accuser.posts}`;
+    document.getElementById("followers").innerHTML=`Followers ${accuser.followers}`;
+    document.getElementById("following").innerHTML=`Following  ${accuser.following}`;
+    document.getElementById("bio").innerHTML=`${accuser.bio}`;
      
 }
 
 
 function colorchange (){
-    //document.getElementById('loginButton').classList.add("login-button-2");
+    
     document.getElementById('loginButton').innerHTML=`<img class="loading-img" src="images/loading-icon.png" alt="">`;
-
-    setTimeout(() => {
+     setTimeout(() => {
             
-            document.getElementById('loginButton').innerHTML=`Log in`;
+        document.getElementById('loginButton').innerHTML=`Log in`;
             
-
-        }, 2000);
+    }, 2000);
 
         }
 
