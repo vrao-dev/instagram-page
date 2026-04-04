@@ -14,7 +14,8 @@
 
 <body>
  
-
+  <section id="main-profile-div">
+  
   <nav class="navigation-bar">
     <img class="nav-icons"  src="images/icons8-instagram-48.png" alt="">
     <img class="nav-icons" src="images/icons8-home-48.png" alt="">
@@ -35,9 +36,16 @@
 <div style="position: relative;">
   <div id="logout-div" >
     
-      <a href="index.html"><img src="images/icons8-logout-24.png" alt="" class="logout-img"></a>
+     <button style="background-color: transparent;
+     border: none;" id="logout-button">
+      <img src="images/icons8-logout-24.png"
+       alt="" class="logout-img"></button>
+
     </div>
-</div>
+  </div>
+  
+  
+
   
    
     <div style="display: flex;
@@ -158,6 +166,16 @@
  
     <script src="js/basic.js"></script>
     <script src="js/profile-page.js"></script>
+
+
+</section>
+    
+
+    <div class="logout-popup-div" id="popup">
+      <h3 class="confirm-text">Confirm to logout ... </h3>
+      <a href="index.html"><button class="confirm-button">Confirm</button></a>
+      
+  </div>
 
 </body>
 

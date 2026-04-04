@@ -5,10 +5,15 @@ body{
     transition: opacity 0.5s ease;
 }
 
-body.transparent {
-    opacity: 0.5;
+.blur-background{
 
+ opacity: 0.4;
+   
 }
+
+
+
+
 
 
 .dp{
@@ -151,21 +156,74 @@ position: absolute;
  right: 20px;
  
  
+ 
   
   
 }
-.logout-div.transparent{
-    opacity: 1;
-}
+
 .logout-img{
     width: 40px;
      transition: all 0.3s ease;
+     
 
 }
 .logout-img:hover{
 transform: scale(1.2);
 }
 .logout-img:active{
+transform: scale(0.95);
+}
+
+.logout-popup-div{
+    
+   display: none;
+    
+
+}
+
+.active-logout-popup-div{
+
+     display: grid;
+    position: fixed;
+    border-color: blanchedalmond;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    background-color:rgb(27, 27, 27);
+    width: 200px;
+    height: 150px;
+    padding: 10px 20px 20px  20px;
+    z-index: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+
+}
+.confirm-text{
+    color: whitesmoke;
+    font-weight: 750;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.confirm-button{
+
+    color:rgb(219, 7, 7);
+    font-weight: 780;
+    font-size: 18px;
+    width: 150px;
+    margin-left: 26px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: gray;
+    border: none;
+    transition: all 0.3s ease;
+}
+.confirm-button:hover{
+transform: scale(1.07);
+}
+.confirm-button:active{
 transform: scale(0.95);
 }
 

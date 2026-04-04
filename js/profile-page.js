@@ -69,7 +69,7 @@ const user_6 = {
     following:'256',
     posts:'0',
     bio:'',
-    number:'8125',
+    number:'8125631523',
 }
 const user_7 = {
     id:'raju',
@@ -199,7 +199,17 @@ function colorchange (){
             
     }, 2000);
 
-        }
+    }
+
+
+    document.getElementById('logout-button').addEventListener('click', function() {
+    
+    document.getElementById('popup').classList.toggle('active-logout-popup-div');
+    document.getElementById('main-profile-div').classList.toggle('blur-background');
+    
+   
+    
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const storedUserId = localStorage.getItem('currentUser');
