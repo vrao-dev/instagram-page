@@ -7,9 +7,8 @@
       .main-div{
 
          display: grid;
-         grid-template-columns: 1fr 2px 1fr;
-         
-         
+         grid-template-columns: 1fr 3px 1fr;
+                 
       }
       button{
          transition: all 0.4s ease;
@@ -17,22 +16,13 @@
       input{
          border-color: grey;
       }
-      
-     
-         
-         
-      
+           
       input:focus{
-         height: 60px;
+         height: 50px;
          border-color: whitesmoke;
                   
       }
-     
-
-     
-
-
-   
+  
       .content-div{
          display: flex;
          flex-direction: column;
@@ -42,7 +32,6 @@
         
       }
      
-
      .login_button{
         background-color: rgb(9, 109, 223);
         color: rgb(255, 253, 253);
@@ -71,8 +60,7 @@
         border-radius: 13px;
         border-style: solid;
         font-family: arial;
-        font-size: 17px;
-        
+        font-size: 17px;   
         margin-top: 50px;
         background: none;
         color: #dae0e2;
@@ -82,7 +70,7 @@
          
      }
      .username:hover,.password:hover{
-      border-color: rgb(177, 165, 165);
+      
      }
      .login_button:hover,
      .show-button:hover,
@@ -97,15 +85,12 @@
      .forgot_password_text:active,
      .login_with_facebook_button:active{
    
-     
       transform: scale(0.98);
-      
-      
+    
      }
 
      .password{
 
-       
         height: 50px;
         width: 450px;
         border-radius: 13px;
@@ -114,7 +99,6 @@
         font-family: arial;
         font-size: 16px;
         color: #dae0e2;
-        
         background: none;
         display: block;
         border-width: 2.3px;
@@ -150,7 +134,6 @@
    
 
      .forgot_password_text{
-      
      
       font-size: 18px;
       background: none;
@@ -158,8 +141,7 @@
       color: whitesmoke;
       width: 450px;
       height: 40px;
-      margin-top: 40px;
-      
+      margin-top: 40px;  
       margin-bottom: 40px;
       border-radius: 18px;
       cursor: pointer;
