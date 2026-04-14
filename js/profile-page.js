@@ -104,14 +104,8 @@ function incorrect (){
          let input = document.querySelector('.input-password');
          let input1=input.value;
          let password = document.querySelector('.incorrect-password');
-        
-        
 
-         
 }
-
-        
-
 
 function accountPage(){
 
@@ -121,11 +115,6 @@ function accountPage(){
          let inputElement = document.querySelector('.input-username');
          let inputElement1=inputElement.value;
 
-   
-         
-        
-
-        
          let users =[user_1,user_2,user_3,user_4,user_5,user_6,user_7,user_8,];
          let account;
 
@@ -136,14 +125,12 @@ function accountPage(){
                 {
                    if( account.number === input1 ){
                     let accuser_1=account.id;
-                    
-                    
+                   
                    
                     localStorage.setItem('currentUser', accuser_1);
                     window.location.href = "profile-page.html";
                     document.querySelector('.incorrect-password').innerHTML=`<p>${''}</p>`;
-
-                     
+ 
                     
                 } 
                   
@@ -170,14 +157,10 @@ function accountPage(){
 }
 
 
-
-
-
 function user (accuser){
    
-    
     accuser ;
-   
+
     document.getElementById("profile-dp").src  = `dps/${accuser.dp}.jpg` 
     document.getElementById("nav-profile-dp").src  = `dps/${accuser.dp}.jpg`;
     document.getElementById("account-username").innerHTML=`${accuser.username}`;
@@ -202,13 +185,10 @@ function colorchange (){
     }
 
 
-    document.getElementById('logout-button').addEventListener('click', function() {
-    
+    document.getElementById('logout-button').addEventListener('click', function() {  
     document.getElementById('popup').classList.toggle('active-logout-popup-div');
     document.getElementById('main-profile-div').classList.toggle('blur-background');
-    
-   
-    
+ 
 });
 
 document.addEventListener('DOMContentLoaded', () => {
